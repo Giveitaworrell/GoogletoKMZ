@@ -13,5 +13,13 @@
     "hbs": "^4.1.2",
     "path": "^0.12.7",
     "request": "^2.88.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Giveitaworrell/KMZ-Maps.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Giveitaworrell/KMZ-Maps/issues"
+  },
+  "homepage": "https://github.com/Giveitaworrell/KMZ-Maps#readme"
 }
