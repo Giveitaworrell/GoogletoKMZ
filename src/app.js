@@ -5,7 +5,7 @@ const geocode = require('./utils/geocode')
 const { url } = require('inspector')
 
 const app = express()
-const port = 8000
+const port = process.env.PORT || 8000
 
 // paths for Express Config
 const publicDirPath = path.join(__dirname, '../public')
