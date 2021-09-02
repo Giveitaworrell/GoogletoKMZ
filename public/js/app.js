@@ -67,7 +67,25 @@ function setSelection (shape) {
 function deleteSelectedShape () {
   if (selectedShape) {
       selectedShape.setMap(null);
-      //Markers.splice(find(selectedShape), 1) need to fixed the returns undefined
+      console.log (selectedShape)
+      if (selectedShape.type === 'marker') {
+        Markers.splice(find(selectedShape), 1);
+        console.log ('Marker deleted')
+      };
+      if (selectedShape.type === 'polyline') {
+        Lines =  Lines.filter((line) => {
+          return line.line !== selectedShape;
+      });
+        console.log ('Polyline deleted')
+        
+      };
+      if (selectedShape.type === 'polygon') {
+        
+        Polygons = Polygons.filter((polyline) => {
+          return  polyline !== selectedShape
+        });
+        console.log ('Polygon deleted')
+      };
   }
 }
 function selectColor () {
