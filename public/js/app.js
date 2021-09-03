@@ -105,7 +105,7 @@ function initMap() {
       zoomControl: false,
       scaleControl: true,
       scaleControlOptions: {
-        Units: UNITS_BOTH,
+        Units: ScaleControlOptions.UNITS_BOTH,
 
       },
       mapTypeId: "satellite",
