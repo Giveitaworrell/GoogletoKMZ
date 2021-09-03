@@ -104,10 +104,6 @@ function initMap() {
       zoom: 18,
       zoomControl: false,
       scaleControl: true,
-      scaleControlOptions: {
-        Units: ScaleControlOptions.UNITS_BOTH,
-
-      },
       mapTypeId: "satellite",
       rotateControl: false,
       tilt: 0,
