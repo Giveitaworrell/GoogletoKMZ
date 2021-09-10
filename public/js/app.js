@@ -179,9 +179,12 @@ function initMap() {
             kmlstring += "  </LineStyle>\n";
             kmlstring += "</Style>\n";
             kmlstring += "<Style id=\"RedSiteLine\">\n";
+            kmlstring += "  <LineStyle>\n";
+            kmlstring += "    <color>ff0000ff</color>\n";
+            kmlstring += "  </LineStyle>"
             kmlstring += "  <PolyStyle>\n";
-            kmlstring += "    <color>ff0000ff\</color>\n";
-            kmlstring += "    <fill>0</fill>\n";
+            kmlstring += "    <color>7f0000ff\</color>\n";
+            kmlstring += "    <fill>1</fill>\n";
             kmlstring += "  </PolyStyle>\n";
             kmlstring += "</Style>\n";
             kmlstring += "<Style id=\"BeaconLocationIcon\">\n";  
