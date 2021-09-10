@@ -181,9 +181,10 @@ function initMap() {
             kmlstring += "<Style id=\"RedSiteLine\">\n";
             kmlstring += "  <LineStyle>\n";
             kmlstring += "    <color>ff0000ff</color>\n";
-            kmlstring += "  </LineStyle>"
+            kmlstring += "    <width>3</width>\n";
+            kmlstring += "  </LineStyle>";
             kmlstring += "  <PolyStyle>\n";
-            kmlstring += "    <color>7f0000ff\</color>\n";
+            kmlstring += "    <color>4d000000\</color>\n";
             kmlstring += "    <fill>1</fill>\n";
             kmlstring += "  </PolyStyle>\n";
             kmlstring += "</Style>\n";
