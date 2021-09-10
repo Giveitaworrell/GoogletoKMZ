@@ -217,7 +217,7 @@ function initMap() {
                 polygonPath = Polygons[i].getPath();
                 kmlstring += "  <Placemark>\n";
                 kmlstring += "    <name>Site Boundary</name>\n";
-                kmlstring += "    <styleUrl>##FF0000</styleUrl>\n";
+                kmlstring += "    <styleUrl>#FF0000</styleUrl>\n";
                 kmlstring += "    <Polygon>\n";
                 kmlstring += "      <outerBoundaryIs>\n";
                 kmlstring += "        <LinearRing>\n";
