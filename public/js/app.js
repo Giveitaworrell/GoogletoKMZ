@@ -178,10 +178,11 @@ function initMap() {
             kmlstring += "    <color>ff7fff00</color>\n";
             kmlstring += "  </LineStyle>\n";
             kmlstring += "</Style>\n";
-            kmlstring += "<Style id=\"#FF0000\">\n";
-            kmlstring += "  <LineStyle>\n";
+            kmlstring += "<Style id=\"RedSiteLine\">\n";
+            kmlstring += "  <PolyStyle>\n";
             kmlstring += "    <color>ff0000ff\</color>\n";
-            kmlstring += "  </LineStyle>\n";
+            kmlstring += "    <fill>0</fill>\n";
+            kmlstring += "  </PolyStyle>\n";
             kmlstring += "<Style>\n";
             kmlstring += "<Style id=\"BeaconLocationIcon\">\n";  
             kmlstring += "  <IconStyle>\n";
@@ -217,7 +218,7 @@ function initMap() {
                 polygonPath = Polygons[i].getPath();
                 kmlstring += "  <Placemark>\n";
                 kmlstring += "    <name>Site Boundary</name>\n";
-                kmlstring += "    <styleUrl>#FF0000</styleUrl>\n";
+                kmlstring += "    <styleUrl>#RedSiteLine</styleUrl>\n";
                 kmlstring += "    <Polygon>\n";
                 kmlstring += "      <outerBoundaryIs>\n";
                 kmlstring += "        <LinearRing>\n";
