@@ -44,7 +44,7 @@ app.get('/help', (req, res) => {
 })
 
 app.get('/widget-test', (req, res) => {
-    res.render('widget-test', {
+    res.render('widget', {
         title: 'Widget',
         name: 'Chris Worrell',
         email: 'giveitaworrell@gmail.com',
