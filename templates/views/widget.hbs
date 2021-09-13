@@ -1,0 +1,50 @@
+ <!DOCTYPE html>
+
+ <html>
+
+<head>
+    <title>Maps</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+<style>
+    #map {
+  height: 500px;
+  width: 100%;
+}
+</style>
+body>
+    <div class="main-content">
+        {{>header}}
+        <p>Add a widget using JqueryUI</p> 
+        {{!-- <form>
+            <input placeholder="Location">
+            <button id="search-button">Search</button>
+        </form> --}}
+        {{!-- <button id="delete-button">Delete Selected Shape</button>   --}}
+    </div>
+    <div id="map"></div>
+
+    <script src="/js/app.js"></script> 
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCgmuaIQtGKYfaBxzp_PPffaeZ1USqujQw&callback=initMap&libraries=drawing&v=weekly" async>
+    </script>
+    {{!-- <div>
+        <form class="form">
+            <label for="lineColor">Line Type</label>
+            <select id="lineColor" onchange="selectColor()">
+                <option value="#0000FF">Water Line</option>
+                <option value="#FFFF00">Electrical Line</option>
+                <option value="#00FF7F">Sewer Line</option>
+            </select>
+        </form>
+        <textarea id="action" rows="20" cols="75"></textarea>
+    </div>
+    <div>
+        <button id="test">Test</button>
+    </div>
+        <input type="button" id="export" value="Download" /> --}}
+    {{>footer}}     
+</body>
+
+
+ </html>
