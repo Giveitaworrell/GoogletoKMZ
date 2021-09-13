@@ -43,6 +43,14 @@ app.get('/help', (req, res) => {
     })
 })
 
+app.get('/widget-test', (req, res) => {
+    res.render('widget-test', {
+        title: 'Widget',
+        name: 'Chris Worrell',
+        email: 'giveitaworrell@gmail.com',
+        library: 'JQueryUI'
+    })
+})
 
 
 app.get('/location', (req, res) => {
