@@ -129,7 +129,7 @@ function initMap() {
       markerOptions: {
         icon: "http://maps.google.com/mapfiles/dir_0.png",
         draggable: true,
-        anchorPoint: (0,-5),
+        anchorPoint: (0,10),
       },
       polylineOptions: {
         strokeColor: document.getElementById("lineColor").value,
