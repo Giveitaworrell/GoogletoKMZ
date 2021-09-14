@@ -127,7 +127,7 @@ function initMap() {
         ],
       },
       markerOptions: {
-        icon: "http://maps.google.com/mapfiles/dir_0.png",
+        icon: "public/img/BlueTriangle.png",
         draggable: true
       },
       polylineOptions: {
@@ -191,7 +191,7 @@ function initMap() {
             kmlstring += "<Style id=\"BeaconLocationIcon\">\n";  
             kmlstring += "  <IconStyle>\n";
             kmlstring += "    <Icon>\n";
-            kmlstring += "      <href>public/img/BlueTriangle.png</href>\n";
+            kmlstring += "      <href>http://maps.google.com/mapfiles/dir_0.png</href>\n";
             kmlstring += "    </Icon>\n";            
             kmlstring += "  </IconStyle>\n";
             kmlstring += "</Style>\n";      
