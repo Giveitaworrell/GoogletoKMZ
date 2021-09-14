@@ -127,7 +127,7 @@ function initMap() {
         ],
       },
       markerOptions: {
-        icon: "Giveitaworrell/GoogletoKMZ/public/img/BlueTriangle.png",
+        icon: "src/img/BlueTriangle.png",
         draggable: true
       },
       polylineOptions: {
