@@ -127,8 +127,9 @@ function initMap() {
         ],
       },
       markerOptions: {
-        icon: "src/img/BlueTriangle.png",
-        draggable: true
+        icon: "http://maps.google.com/mapfiles/dir_0.png",
+        draggable: true,
+        anchorPoint: (0,-5),
       },
       polylineOptions: {
         strokeColor: document.getElementById("lineColor").value,
