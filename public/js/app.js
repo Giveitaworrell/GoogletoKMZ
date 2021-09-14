@@ -128,8 +128,8 @@ function initMap() {
       },
       markerOptions: {
         icon: [
-          "http://maps.google.com/mapfiles/dir_0.png",
-          (0,-5),
+          google.maps.Icon.url = "http://maps.google.com/mapfiles/dir_0.png",
+          google.maps.Icon.anchor = (0,-5),
         ],
         draggable: true,
         animation: DROP
