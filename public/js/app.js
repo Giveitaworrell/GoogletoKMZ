@@ -241,7 +241,7 @@ function initMap() {
             kmlstring += "</kml>\n";
       document.getElementById("action").value = kmlstring;
 
-      document.getElementById("export")
+      document.getElementById("export").value = kmlstring
             .addEventListener("click", function () {
                   var text = kmlstring;
                   var filename = "Sample Plan.kml";
