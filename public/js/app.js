@@ -127,7 +127,10 @@ function initMap() {
         ],
       },
       markerOptions: {
-        icon: "http://maps.google.com/mapfiles/dir_0.png",
+        icon: {
+          url:  "http://maps.google.com/mapfiles/dir_0.png",
+          anchor: google.maps.Point(0,5),
+        },
         draggable: true,
       },
       polylineOptions: {
