@@ -108,7 +108,7 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-    var TriangleOffset = new google.maps.Point(0.50,0);
+    var TriangleOffset = new google.maps.Point(1,1);
 
     const marker = new google.maps.Marker({
       position: BelAir,
