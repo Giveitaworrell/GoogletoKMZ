@@ -130,6 +130,7 @@ function initMap() {
           anchor: google.maps.Point(0, 50),
           origin: google.maps.Point(50,-100),
         },
+        anchor: (0,25),
         draggable: true
       },
       polylineOptions: {
