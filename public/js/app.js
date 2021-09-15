@@ -108,11 +108,7 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-    var BeaconIcon = new google.maps.icon({
-      url:"http://maps.google.com/mapfiles/dir_0.png",
-      anchor: google.maps.Point(50, 100),
-      origin: google.maps.Point(50, 100) 
-    });
+    var TriangleOffset = new google.maps.Point(0,25);
 
     const marker = new google.maps.Marker({
       position: BelAir,
@@ -130,7 +126,13 @@ function initMap() {
         ],
       },
       markerOptions: {
-        icon: BeaconIcon,
+        icon: ({
+          url:"http://maps.google.com/mapfiles/dir_0.png",
+          offset: "100%",
+          anchor: TriangleOffset,
+          origin: TriangleOffset,
+        }),
+        offset: "100%",
         draggable: true,
         animation: google.maps.Animation.DROP
       },
