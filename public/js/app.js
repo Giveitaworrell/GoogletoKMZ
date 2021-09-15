@@ -128,7 +128,6 @@ function initMap() {
       markerOptions: {
         icon: ({
           url:"http://maps.google.com/mapfiles/dir_0.png",
-          offset: "100%",
           anchor: TriangleOffset,
           origin: TriangleOffset,
         }),
