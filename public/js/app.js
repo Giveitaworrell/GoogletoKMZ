@@ -108,7 +108,6 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-    var TriangleOffset = new google.maps.Point(0,-20);
 
     const marker = new google.maps.Marker({
       position: BelAir,
@@ -128,7 +127,7 @@ function initMap() {
       markerOptions: {
         icon: ({
           url:"http://maps.google.com/mapfiles/dir_0.png",
-          origin: new google.maps.Point(0,15),
+          origin: new google.maps.Point(0,-15),
         }),
         offset: "100%",
         draggable: true,
