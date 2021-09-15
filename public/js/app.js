@@ -127,7 +127,7 @@ function initMap() {
       markerOptions: {
         icon: ({
           url:"http://maps.google.com/mapfiles/dir_0.png",
-          anchor: new google.maps.Point(50, 50),
+          anchor: new google.maps.Point(0, 0),
         }),
         draggable: true,
       },
