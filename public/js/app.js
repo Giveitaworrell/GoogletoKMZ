@@ -102,8 +102,6 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       center: BelAir,
       zoom: 18,
-      zoomControl: false,
-      scaleControl: true,
       mapTypeId: "satellite",
       rotateControl: false,
       tilt: 0,
@@ -129,9 +127,9 @@ function initMap() {
       markerOptions: {
         icon: {
           url:  "http://maps.google.com/mapfiles/dir_0.png",
-          anchor: google.maps.Point(0,5),
+          anchor: google.maps.Point(0, 50),
         },
-        draggable: true,
+        draggable: true
       },
       polylineOptions: {
         strokeColor: document.getElementById("lineColor").value,
@@ -181,16 +179,6 @@ function initMap() {
             kmlstring += "    <color>ff7fff00</color>\n";
             kmlstring += "  </LineStyle>\n";
             kmlstring += "</Style>\n";
-            kmlstring += "<Style id=\"RedSiteLine\">\n";
-            kmlstring += "  <LineStyle>\n";
-            kmlstring += "    <color>ff0000ff</color>\n";
-            kmlstring += "    <width>3</width>\n";
-            kmlstring += "  </LineStyle>";
-            kmlstring += "  <PolyStyle>\n";
-            kmlstring += "    <color>4d000000\</color>\n";
-            kmlstring += "    <fill>1</fill>\n";
-            kmlstring += "  </PolyStyle>\n";
-            kmlstring += "</Style>\n";
             kmlstring += "<Style id=\"BeaconLocationIcon\">\n";  
             kmlstring += "  <IconStyle>\n";
             kmlstring += "    <Icon>\n";
@@ -225,7 +213,7 @@ function initMap() {
                 polygonPath = Polygons[i].getPath();
                 kmlstring += "  <Placemark>\n";
                 kmlstring += "    <name>Site Boundary</name>\n";
-                kmlstring += "    <styleUrl>#RedSiteLine</styleUrl>\n";
+                // kmlstring += "    <styleUrl>#" + Lines[i].color + "</styleUrl>\n";
                 kmlstring += "    <Polygon>\n";
                 kmlstring += "      <outerBoundaryIs>\n";
                 kmlstring += "        <LinearRing>\n";
