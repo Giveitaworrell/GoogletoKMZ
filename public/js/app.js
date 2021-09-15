@@ -110,8 +110,8 @@ function initMap() {
     });
     var BeaconIcon = new google.maps.Icon({
       url:"http://maps.google.com/mapfiles/dir_0.png",
-      anchor: google.maps.Icon.Point(50, 100),
-      origin: google.maps.Icon.Point(50, 100) 
+      anchor: google.maps.Point(50, 100),
+      origin: google.maps.Point(50, 100) 
     });
 
     const marker = new google.maps.Marker({
