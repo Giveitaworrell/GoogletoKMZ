@@ -128,7 +128,7 @@ function initMap() {
         icon: "http://maps.google.com/mapfiles/dir_0.png",
         anchorPoint: (0,25),
         draggable: true,
-        animation: "BOUNCE"
+        animation: google.maps.Animation.BOUNCE
       },
       polylineOptions: {
         strokeColor: document.getElementById("lineColor").value,
