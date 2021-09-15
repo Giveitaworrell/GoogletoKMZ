@@ -128,8 +128,7 @@ function initMap() {
       markerOptions: {
         icon: ({
           url:"http://maps.google.com/mapfiles/dir_0.png",
-          origin: TriangleOffset,
-
+          origin: new google.maps.Point(0,15),
         }),
         offset: "100%",
         draggable: true,
