@@ -125,14 +125,10 @@ function initMap() {
         ],
       },
       markerOptions: {
-        icon: new google.maps.Icon({
-          url: "http://maps.google.com/mapfiles/dir_0.png",
-          anchor: google.maps.Point(0, 50),
-          origin: google.maps.Point(50,-100),
-          Size: google.maps.Size(10,50)
-        }),
-        anchor: (0,25),
-        draggable: true
+        icon: "http://maps.google.com/mapfiles/dir_0.png",
+        anchorPoint: (0,25),
+        draggable: true,
+        animation: "BOUNCE"
       },
       polylineOptions: {
         strokeColor: document.getElementById("lineColor").value,
