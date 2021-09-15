@@ -128,6 +128,7 @@ function initMap() {
         icon: {
           url:  "http://maps.google.com/mapfiles/dir_0.png",
           anchor: google.maps.Point(0, 50),
+          origin: google.maps.Point(50,-100),
         },
         draggable: true
       },
