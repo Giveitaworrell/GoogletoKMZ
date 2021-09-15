@@ -108,7 +108,7 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-    var BeaconIcon = new google.maps.Icon({
+    var BeaconIcon = new google.maps.icon({
       url:"http://maps.google.com/mapfiles/dir_0.png",
       anchor: google.maps.Point(50, 100),
       origin: google.maps.Point(50, 100) 
