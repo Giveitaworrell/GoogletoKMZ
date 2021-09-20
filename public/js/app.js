@@ -97,7 +97,10 @@ function selectColor () {
   polylineOptions.strokeColor = color;
   drawingManager.set('polylineOptions', polylineOptions);
 };
-
+var measureTool = new MeasureTool(map, {
+  showSegmentLength: true,
+  unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
+});
 function initMap() {  
   
     map = new google.maps.Map(document.getElementById("map"), {
@@ -157,10 +160,7 @@ function initMap() {
     google.maps.event.addDomListener(drawingManager, 'polygoncomplete', function(polygon) {
             Polygons.push(polygon)
           });
-          var measureTool = new MeasureTool(map, {
-            showSegmentLength: true,
-            unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
-          });
+
           
         document.getElementById("test").addEventListener("click", function() {
             kmlstring = "";
