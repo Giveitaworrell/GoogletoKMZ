@@ -96,11 +96,7 @@ function selectColor () {
   polylineOptions.strokeColor = color;
   drawingManager.set('polylineOptions', polylineOptions);
 };
-var map, measureTool;    
-      measureTool = new MeasureTool(map, {
-      contextMenu: false,
-      unit: MeasureTool.UnitTypeId.METRIC // metric, imperial, or nautical
-    });
+
 function initMap() {  
   
     map = new google.maps.Map(document.getElementById("map"), {
