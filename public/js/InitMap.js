@@ -16,4 +16,3 @@ function initMap() {
       gestureHandling: "greedy",
     });
 };
-google.maps.event.addDomListener(window, 'load', initMap)
