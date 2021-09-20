@@ -112,18 +112,7 @@ function initMap() {
       contextMenu: false,
       unit: MeasureTool.UnitTypeId.METRIC // metric, imperial, or nautical
     });
-    measureTool.addListener('measure_start', () => {
-      console.log('started');
-//      measureTool.removeListener('measure_start')
-    });
-    measureTool.addListener('measure_end', (e) => {
-      console.log('ended', e.result);
-//      measureTool.removeListener('measure_end');
-    });
-    measureTool.addListener('measure_change', (e) => {
-      console.log('changed', e.result);
-//      measureTool.removeListener('measure_change');
-    });
+
     const marker = new google.maps.Marker({
       position: BelAir,
       map: map,
