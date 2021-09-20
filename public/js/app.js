@@ -98,10 +98,7 @@ function selectColor () {
   polylineOptions.strokeColor = color;
   drawingManager.set('polylineOptions', polylineOptions);
 };
-var measureTool = new MeasureTool(map, {
-  showSegmentLength: true,
-  unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
-});
+
 function initMap() {  
   
     map = new google.maps.Map(document.getElementById("map"), {
@@ -113,7 +110,10 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-
+    var measureTool = new MeasureTool(map, {
+      showSegmentLength: true,
+      unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
+    });
     const marker = new google.maps.Marker({
       position: BelAir,
       map: map,
