@@ -54,9 +54,9 @@ input {
     padding: 8px;
 
 }
-map{
-    height: 600px;
-    width: 100%;
+#map{
+    height: 650px;
+    width: 650px;
     margin-top: 0px;
 }
 #delete-button{
