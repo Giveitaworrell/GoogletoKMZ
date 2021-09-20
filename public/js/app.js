@@ -1,6 +1,4 @@
 console.log('Client side javascript is loaded!')
-import MeasureTool from 'measuretool-googlemaps-v3'
-var measureTool = new MeasureTool(map);
 const addressForm = document.querySelector('form')
 const search = document.querySelector('input')
 var Latitude = 39.574175814665494
