@@ -1,4 +1,5 @@
 console.log('Client side javascript is loaded!')
+import MeasureTool from 'measuretool-googlemaps-v3'
 const addressForm = document.querySelector('form')
 const search = document.querySelector('input')
 var Latitude = 39.574175814665494
@@ -156,7 +157,11 @@ function initMap() {
     google.maps.event.addDomListener(drawingManager, 'polygoncomplete', function(polygon) {
             Polygons.push(polygon)
           });
-
+          var measureTool = new MeasureTool(map, {
+            showSegmentLength: true,
+            unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
+          });
+          
         document.getElementById("test").addEventListener("click", function() {
             kmlstring = "";
             kmlstring += "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n";
