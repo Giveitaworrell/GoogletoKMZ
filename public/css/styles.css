@@ -55,9 +55,9 @@ input {
 
 }
 map{
-    height: 500px;
+    height: 600px;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
 }
 #delete-button{
     margin-bottom: 5px;
