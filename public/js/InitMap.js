@@ -15,5 +15,5 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-}
+};
 google.maps.event.addDomListener(window, 'load', initMap)
