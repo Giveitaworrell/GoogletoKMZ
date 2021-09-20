@@ -9,14 +9,12 @@
 </head>
 <style>
     #map {
-  height: 500px;
+  height: 100%;
   width: 100%;
 }
 </style>
 <body>
     <div class="main-content">
-        {{>header}}
-        <p>Use this site to create a site plan!</p> 
         <form>
             <input placeholder="Location">
             <button id="search-button">Search</button>
@@ -45,8 +43,7 @@
     <div>
         <button id="test">Test</button>
     </div>
-        <input type="button" id="export" value="Download" />
-    {{>footer}}     
+        <input type="button" id="export" value="Download" />   
 </body>
 
 
