@@ -285,5 +285,3 @@ function initMap() {
                 google.maps.event.addListener(map, 'click', clearSelection);
                 google.maps.event.addDomListener(document.getElementById('delete-button'), 'click', deleteSelectedShape);
 }
-
-google.maps.event.addDomListener(window, 'load', initMap)
