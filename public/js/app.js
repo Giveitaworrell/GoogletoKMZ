@@ -110,10 +110,6 @@ function initMap() {
       streetViewControl: false,
       gestureHandling: "greedy",
     });
-    var measureTool = new MeasureTool(map, {
-      showSegmentLength: true,
-      unit: MeasureTool.UnitTypeId.IMPERIAL // or just use 'imperial'
-    });
     const marker = new google.maps.Marker({
       position: BelAir,
       map: map,
