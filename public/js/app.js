@@ -102,8 +102,7 @@ function initMap() {
     map = new google.maps.Map(document.getElementById("map"), {
       center: BelAir,
       zoom: 18,
-      mapTypeId: "satellite",
-      labels: true,
+      mapTypeId: "hybrid",
       mapTypeControl: false,
       rotateControl: false,
       scaleControl: true,
