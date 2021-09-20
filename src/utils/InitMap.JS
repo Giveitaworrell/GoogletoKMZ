@@ -1,4 +1,9 @@
 console.log("initMap.JS")
+var Latitude = 39.574175814665494
+var Longitude = -76.36929201813889
+var map = null
+var BelAir = { lat: Latitude, lng: Longitude }
+
 
 function initMap() {  
   
@@ -12,3 +17,4 @@ function initMap() {
       gestureHandling: "greedy",
     });
 }
+google.maps.event.addDomListener(window, 'load', initMap)
