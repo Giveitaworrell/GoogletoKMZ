@@ -65,6 +65,8 @@ function setSelection (shape) {
 }
 function deleteSelectedShape () {
   if (selectedShape) {
+    
+    // removes current marker
     const i = Markers.indexOf(selectedShape)  
     if (i > -1 ) {
       Markers.splice(i,1)
