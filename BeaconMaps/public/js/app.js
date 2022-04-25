@@ -65,7 +65,12 @@ function setSelection (shape) {
 }
 function deleteSelectedShape () {
   if (selectedShape) {
-      selectedShape.setMap(null);
+    const i = Markers.indexOf(selectedShape)  
+    if (i > -1 ) {
+      Markers.splice(i,1)
+    }
+    selectedShape.setMap(null);
+
       //Markers.splice(find(selectedShape), 1) need to fixed the returns undefined
   }
 }
